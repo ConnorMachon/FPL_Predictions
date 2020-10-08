@@ -1,16 +1,16 @@
-##Project Goal:
+# Project Goal:
 I want to use my knowledge of Python, statistics, and predictive modeling to predict which Fantasy Premier League players will earn the most FPL points in their upcoming matches. To do this, I will use available data on Premier League fixtures and players, as well as examples of other machine learning methods used to predict match results and player points.
 
-#Measuring Success:
+# Measuring Success:
 I can measure the success of my project by comparing the post-prediction team and avg game week points to my previous FPL season teams and their avg game week points.
 I can also measure my success by checking my position in the FPL table relative to all others. If I am > 50%, then statistically my team outperforms the “average team”.
 
-#Game Rules:
+# Game Rules:
 -	Each fantasy ‘manager’ starts with a budget of 100 Million and must buy 15 soccer players (11 for the main squad + 4 subs)
 -	You must have at least 2 Goalkeepers, 5 Defenders, 5 Midfielders, and 3 Forwards
 -	You can’t have more than 3 players from the same team
 
-#Step 1 – Finding the Right Data Source: 
+# Step 1 – Finding the Right Data Source: 
 I have a couple options to use as my source of premier league data. 
 I can connect directly to the FPL API with the following link: ‘https://fantasy.premierleague.com/api/bootstrap-static/’. This is great because the data is constantly updated, but also requires me to reformat the data (check my Jupyter notebook for a previous example. This article explains how to set up a proper data frame when using the API: ‘https://towardsdatascience.com/fantasy-premier-league-value-analysis-python-tutorial-using-the-fpl-api-8031edfe9910#8ef2’
 The above dataset is available in JSON format.
@@ -18,7 +18,7 @@ The above dataset is available in JSON format.
 I could also use this previous code that is “A FPL library that gets all the basic stats for each player, gw-specific data for each player and season history of each player”. The code can be found at: ‘https://github.com/vaastav/Fantasy-Premier-League’.
 The above dataset is available in csv format.
 
-#Step 2 – Learning from Others:
+# Step 2 – Learning from Others:
 I’m not sure where I saw this from, but in a previous example I saw that someone was trying to accommodate for players being signed and transferred to the Premier League partway through the season. In that example, Avg Points per game was calculated by taking a player’s total points and dividing by the # of games that they played in (minutes played > 0).
 Another example solved this exact same problem by just removing players who played in less than 10 games. 
  
@@ -31,7 +31,7 @@ The above example looked at Serie A data and only used the following parameters:
 -	Score difference between the 1st & last season
 -	Career score (calculated by taking the total career points divided by the total career games played)
 -	Presence of a constant positive or negative trend
--	# of years playing in the Serie A
+-	Number of years playing in the Serie A
 -	Last season’s avg score
  
 ‘https://towardsdatascience.com/beating-the-fantasy-premier-league-game-with-python-and-data-science-cf62961281be’ & ‘https://github.com/Botafogo1894/Project1’
@@ -43,11 +43,11 @@ The above example looked at the following conditions:
 -	Once the optimal number of expensive superstar players are picked, the Algorithm starts going through the list of players with the highest ROI and tries to get us as many of the top names as it can, until we get close to depleting our budget and filling all of the team positions.
 -	Algorithm prints a list of the players it picked at the end and gives us the remaining budget and the total fantasy points of the team.
 
-#Important Notes: 
+# Important Notes: 
 ‘http://goodsciencebadscience.nl/?p=424’
 Stepwise Regression should be used during the exploratory stage. We want to use the backward method of stepwise regression to help understand what variables have the most importance in predicting future scores, but we don’t want to use stepwise as a predictor because of its limitations. Limitations include overfitting the training data and the importance of the order in which the variables were added to or removed from the model. The Forced Entry Method is often used as a substitute for stepwise regression in confirmatory research.
 
-#Program of Choice:
+# Program of Choice:
 For this project I’m going to be running Python on a Jupyter Notebook. I’m choosing to use Jupyter Notebook because I want to focus on readability, both for myself and others as this is going to be a long-term project and one that I hope to improve upon in multiple future iterations.
 
 

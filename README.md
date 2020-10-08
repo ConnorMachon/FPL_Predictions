@@ -1,4 +1,4 @@
-#Project Goal:
+##Project Goal:
 I want to use my knowledge of Python, statistics, and predictive modeling to predict which Fantasy Premier League players will earn the most FPL points in their upcoming matches. To do this, I will use available data on Premier League fixtures and players, as well as examples of other machine learning methods used to predict match results and player points.
 
 #Measuring Success:

@@ -51,8 +51,8 @@ Stepwise Regression should be used during the exploratory stage. We want to use 
 For this project I’m going to be running Python on a Jupyter Notebook. I’m choosing to use Jupyter Notebook because I want to focus on readability, both for myself and others as this is going to be a long-term project and one that I hope to improve upon in multiple future iterations.
 
 # Step 3 - Project Phases
-Phase 1 - Predicting a match's outcome (Win, Loss, Draw)
-Phase 2 - Predicting a match's scoreline based on the outcome
-Phase 3 - Predicting a player's individual performance based on the match scoreline
+- Phase 1 - Predicting a match's outcome (Win, Loss, Draw)
+- Phase 2 - Predicting a match's scoreline based on the outcome
+- Phase 3 - Predicting a player's individual performance based on the match scoreline
 
 
